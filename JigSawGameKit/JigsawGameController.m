@@ -141,7 +141,7 @@ static const CGFloat kStandSpacing = 1.0f;
     
     if (indexPath.row < self.datas.count) {
         JigsawGame *selectJigsawGame = self.datas[indexPath.row];
-        if (!_selectJigsawGame) {
+        if (_selectJigsawGame == nil) {
             _selectJigsawGame = selectJigsawGame;
             _selectJigsawGame.selected = YES;
             [collectionView reloadData];
@@ -157,7 +157,7 @@ static const CGFloat kStandSpacing = 1.0f;
                                                           [NSIndexPath indexPathForItem:change inSection:0]]];
                 
                 if ([_oldDatas isEqualToArray:self.datas]) {
-                    NSLog(@"游戏用时 %ld", KTIMER - _timeCount);
+ 
                     
                     [self endGame];
                     
@@ -342,7 +342,7 @@ static const CGFloat kStandSpacing = 1.0f;
         self.label.text = [NSString stringWithFormat:@"%d", KTIMER];
         
         _timer = [NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
-            self.label.text = [NSString stringWithFormat:@"%02ld", _timeCount];
+//            self.label.text = [NSString stringWithFormat:@"%02ld", _timeCount];
             
             if (_timeCount <= 0) {
                [self endGame];
