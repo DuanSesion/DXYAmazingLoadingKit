@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                     动画呀 +++++++++++++++++++++++++++++++
                    DESC
 
-  s.homepage     = "https://github.com/DuanSesion/JigSawGameKit"
+  s.homepage     = "https://github.com/DuanSesion/DXYAmazingLoadingKit"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/DuanSesion/JigSawGameKit.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/DuanSesion/DXYAmazingLoadingKit.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "DXYAmazingLoadingKit/DXYAmazingLoadingKit/*.{h,m}"
+  s.source_files  = "DXYAmazingLoadingKit/*.{h,m}"
   # s.exclude_files = "DXYAmazingLoadingKit/DXYAmazingLoadingKit"
 
   # s.public_header_files = "*.h"
