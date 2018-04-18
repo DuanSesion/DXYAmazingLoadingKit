@@ -1,2 +1,4 @@
-# JigSawGameKit
-JigSawGameKit
+# DXYAmazingLoadingKit
+DXYAmazingLoadingKit
+
+pod  'DXYAmazingLoadingKit'
