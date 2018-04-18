@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint JigSawGameKit.podspec' to ensure this is a
+#  Be sure to run `pod spec lint DXYAmazingLoadingKit.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "JigSawGameKit"
+  s.name         = "DXYAmazingLoadingKit"
   s.version      = "0.0.1"
-  s.summary      = "My JigSawGameKit."
+  s.summary      = " ～～～～ DXYAmazingLoadingKit."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    My JigSawGameKit JigSawGameKit JigSawGameKit JigSawGameKit==
+                    动画呀 +++++++++++++++++++++++++++++++
                    DESC
 
   s.homepage     = "https://github.com/DuanSesion/JigSawGameKit"
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "duan" => "dalizhiyan@qq.com" }
+  s.author             = { "duan" => "duanshaoxiong@tangdada.cn" }
   # Or just: s.author    = "duan"
   # s.authors            = { "duan" => "duanshaoxiong@tangdada.cn" }
   # s.social_media_url   = "http://twitter.com/duan"
@@ -68,7 +68,10 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "10.0"
+  s.ios.deployment_target = "9.0"
+  # s.osx.deployment_target = "10.7"
+  # s.watchos.deployment_target = "2.0"
+  # s.tvos.deployment_target = "9.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -77,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/DuanSesion/JigSawGameKit.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/DuanSesion/JigSawGameKit.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,14 +91,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "JigSawGameKit/*.{h,m}"
-  # s.exclude_files = "JigSawGameKit/JigSawGameKit"
-  s.resource      = 'JigSawGameKit/resourse.bundle'
-  s.public_header_files = ['JigSawGameKit/*.h']
-  s.frameworks = "UIKit"
-  s.requires_arc = true
+  s.source_files  = "DXYAmazingLoadingKit/DXYAmazingLoadingKit/*.{h,m}"
+  # s.exclude_files = "DXYAmazingLoadingKit/DXYAmazingLoadingKit"
 
-  # s.public_header_files = "Classes/**/*.h"
+  # s.public_header_files = "*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -118,7 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+  s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
